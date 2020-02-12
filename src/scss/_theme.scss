@@ -1,0 +1,128 @@
+[data-theme="dark"] {
+  body {
+    background: #0a0f1b;
+    color: #e4e4e4;
+
+    a, i, p {
+      color: #e4e4e4;
+    }
+  }
+
+  .navbar {
+    &-navlinks {
+      .active {
+        border-bottom: 1px solid #aa6c39;
+      }
+
+      &__link {
+      color: #aa6c39;
+
+        &:hover {
+          border-bottom: 1px solid #aa6c39;
+        }
+      }
+    }
+
+    &-themetoggle i {
+      color: #aa6c39;
+    }
+  }
+
+  .base {
+    &-cta {
+      .btn-primary {
+        border: 1px solid #aa6c39;
+        background: transparent;
+        color: #e4e4e4;
+      }
+    }
+
+    &-social {
+      img {
+        background: #aa6c39;
+        border: 1px solid transparent;
+      }
+    }
+  }
+
+  .project-card {
+    background: #17233f;
+
+    &__hr_set {
+      hr {
+        background-color: #aa6c39;
+      }
+    }
+
+    &__title {
+      color: #e4e4e4;
+    }
+
+    &__details {
+      color: #e4e4e4;
+
+      &__cta {
+        .github-icon {
+          border: 1px solid #aa6c39;
+          padding: 5px;
+          border-radius: 50%;
+          background: #aa6c39;
+        }
+
+        .btn-primary {
+          border: 1px solid #aa6c39;
+        }
+
+        i {
+          color: #aa6c39;
+        }
+      }
+    }
+  }
+
+  .iframe {
+    &-header {
+      background: #17233f;
+      color: #aa6c39;
+
+      &__action_buttons {
+        color: #17233f;
+      }
+    }
+  }
+
+  .contact {
+    &-item {
+
+      label {
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      input, textarea {
+        outline: none;
+        width: 100%;
+        padding: 12px 0 12px 10px;
+        font-size: 16px;
+        font-family: Georgia, Cambria, Cochin, Times, 'Times New Roman', serif;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 50px rgba(0, 0, 0, 0.13);
+        background: transparent;
+        border: 1px solid #aa6c39;
+        border-radius: 10px;
+        color: #e4e4e4;
+      }
+
+      .required-notation {
+        color: red;
+      }
+    }
+
+    &-cta {
+      .btn {
+        border: 1px solid #aa6c39;
+        background: transparent;
+        color: #e4e4e4;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.btn {
+  outline: none;
+  font-family: "Georgia";
+  font-size: 16px;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.09), 0 6px 40px rgba(26, 25, 25, 0.13);
+  cursor: pointer;
+
+  &-primary {
+    border: transparent;
+    background: rgb(251, 251, 251);
+  }
+}

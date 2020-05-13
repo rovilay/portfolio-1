@@ -7,6 +7,7 @@ import RParticles from '../Components/Particles';
 import Base from '../views/Base';
 import Contact from '../views/Contact';
 import Projects from '../views/ProjectList';
+import Skills from '../views/Skills';
 
 const Routes = () => (
   <React.Fragment>
@@ -17,6 +18,7 @@ const Routes = () => (
       <Route path='/' component={Base} exact={true} />
       <Route path='/projects' component={Projects} exact={true} />
       <Route path='/contact' component={Contact} exact={true} />
+      <Route path='/skills' component={Skills} exact={true} />
       <Route component={NotFound} />
     </Switch>
   </React.Fragment>

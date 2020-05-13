@@ -6,7 +6,7 @@ import bookShelfImage from '../assets/projects/bookShelfImage.png';
 import upshotImage from '../assets/projects/upshotImage.png';
 import twitterIcon from '../assets/twitter.png';
 
-import { IThemeProps } from '../types';
+import { IThemeProps, ISkillGroup } from '../types';
 import { IContactFormErrors } from './../types/index.d';
 
 export const STORAGE = 'storage';
@@ -25,15 +25,17 @@ export const THEME_ICON: IThemeProps = {
 export const THEME_ATTRIBUTE = 'data-theme';
 
 export const GET_TO_KNOW_ME = `
-  I am a Fullstack Software Engineer based in Nigeria. With over 2 years of
-  experience, I design backend systems with different languages e.g Node.js, Go, and Python. and
-  versatile with frontend engineering.
-  <br />
-  When I am not coding, you can find me playing watching debates, reading, watching
-  movies or learning new stuff.
+  I am a Fullstack Software Developer  with 3+ years experience in designing and developing modern web applications. I enjoy solving complex problems and building quality products
+  with good user experience. I have ample experience working with technologies and tools such as HTML, CSS/SASS, Javascript, Node.js, 
+  Typescript/ES6, React, Redux, Vue, Golang, Docker, PostgreSQL, MongoDB, Nightwatch.js, Swagger, Mocha, Chai, Jest, Webpack, Shopify, 
+  Python, AWS, Terraform among others.
 `;
 
 export const NAV_LINKS = [
+  {
+    key: 'Skills & Tech',
+    link: '/skills',
+  },
   {
     key: 'Projects',
     link: '/projects',
@@ -59,7 +61,7 @@ export const PROJECT_LIST = [
     title: 'Upshot',
     image: upshotImage,
     description: `This is an application designed to help manage events and make it more fun.`,
-    link: 'https://upshot-stage.netlify.com/',
+    link: 'https://upshot-hq.herokuapp.com/',
     githubLink: '',
   },
   {
@@ -70,6 +72,34 @@ export const PROJECT_LIST = [
     link: 'http://books-on-shelf.herokuapp.com/',
     githubLink: 'https://github.com/rovilay/Books-shelf',
   }
+];
+
+export const SKILL_GROUPS: ISkillGroup[] = [
+  {
+    title: 'frontend',
+    skills: ['Javascript/Es6', 'React.js', 'Vue.js', 'HTML', 'CSS/SASS', 'Typescript', 'Shopify', 'Redux'],
+    icon: 'palette',
+  },
+  {
+    title: 'backend',
+    skills: ['Node.js', 'Golang', 'Python', 'Express', 'Flask', 'Gin', 'Typescript'],
+    icon: 'build',
+  },
+  {
+    title: 'databases & orm',
+    skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'GraphQL', 'Sequelize', 'Mongoose'],
+    icon: 'storage',
+  },
+  {
+    title: 'deployment & services',
+    skills: ['Heroku', 'Netlify', 'AWS', 'Docker', 'Terraform'],
+    icon: 'cloud',
+  },
+  {
+    title: 'misc.',
+    skills: ['Git', 'Github', 'Figma', 'Invision', 'Gitlab', 'Trello', 'Jira', 'Pivotal Tracker'],
+    icon: 'settings',
+  },
 ];
 
 export const BLOG_URL = '';

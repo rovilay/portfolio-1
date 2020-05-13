@@ -10,3 +10,9 @@ export interface IContactFormValues {
 }
 
 export interface IContactFormErrors extends IContactFormValues { }
+
+export interface ISkillGroup {
+  title: string;
+  skills: string[];
+  icon?: string;
+}

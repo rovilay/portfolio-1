@@ -1,12 +1,13 @@
 .navbar {
   position: relative;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   flex-basis: 100%;
   padding: 20px 60px 0 60px;
 
   &-avatar {
-    flex-basis: 60%;
+    flex-basis: 50%;
 
     img {
       width: 100px;

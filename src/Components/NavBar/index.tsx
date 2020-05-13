@@ -2,7 +2,7 @@ import * as React from 'react';
 import { NavLink } from 'react-router-dom';
 import Avatar from './Avatar';
 
-import { BLOG_URL, NAV_LINKS } from '../../settings';
+import { NAV_LINKS } from '../../settings';
 import './NavBar.scss';
 import ThemeToggle from './ThemeToggle';
 
@@ -22,14 +22,14 @@ const NavLinks = () => {
   return (
     <div className='navbar-navlinks'>
       {renderLinks}
-      <a
+      {/* <a
         href={BLOG_URL}
         className='navbar-navlinks__link'
         rel='noopener noreferrer'
         target='_blank'
       >
         Blog
-      </a>
+      </a> */}
     </div>
   );
 };

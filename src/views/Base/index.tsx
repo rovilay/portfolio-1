@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import avatarimage from '../../assets/ogooluwa-2.jpg';
 
-import { ENGINEER_NAME, SOCIAL_LINKS } from '../../settings';
+import { ENGINEER_NAME, SOCIAL_LINKS, GET_TO_KNOW_ME } from '../../settings';
 import './Base.scss';
 
 const Base: React.FC = () => {
@@ -33,17 +33,7 @@ const Base: React.FC = () => {
         </div>
         <div className='base-info'>
           <p className='base-info__name'>Hi! I am {ENGINEER_NAME}.</p>
-          <p className='base-info__detail'>
-            I am a Fullstack Software Developer currently working
-            at Omaze and based in Nigeria. I enjoy solving complex problems and building quality products
-            with good user experience. With over 2 years of experience, 
-            I design backend systems with different languages e.g Node.js, Go, and Python., and
-            versatile with frontend engineering.
-            <br />
-            <br />
-            When I am not coding, you can find me playing FIFA, watching debates, reading, watching
-            movies or learning new stuff.
-          </p>
+          <p className='base-info__detail'>{GET_TO_KNOW_ME}</p>
           <div className='base-cta'>
             <NavLink
               to='/projects'
